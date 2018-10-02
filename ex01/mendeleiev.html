@@ -11,16 +11,32 @@ H1 {
 }
 table {
 	width:100%;
+	height:100%;
 	margin-left:auto;
 	margin-right:auto;
 	border-collapse:separate;
 	letter-spacing:1px;
 }
 td, th {
+	position:relative;
 	border:1px solid rgb(0,0,0);
 	padding:10px;
 	text-align:center;
 	font-size:100%;
+}
+.numero {
+	font-size:60%;
+	text-align:left;
+	position:absolute;
+	bottom:10%;
+	left:1%;
+}
+.poids {
+	font-size:60%;
+	text-align:right;
+	position:absolute;
+	top:10%;
+	right:1%;
 }
 IMG {
 	margin-left:40%;
@@ -37,18 +53,6 @@ IMG {
 .nonmet {
 	background-color:rgb(240,34,36);
 }
-.numero {
-	font-size:60%;
-	text-align:left;
-	margin-block-start: initial;
-	margin-block-end: initial;
-}
-.poids {
-	font-size:60%;
-	text-align:right;
-	margin-block-start: initial;
-	margin-block-end: initial;
-}
 		</STYLE>
 	</HEAD>
 
@@ -58,7 +62,7 @@ IMG {
 		<IMG src="/Users/cpalmier/Documents/PHP/ex01/atome.png" alt="img atome">
 		</BR>
 		</BR>
-		<table>
+		<table contenteditable="true">
 			<tr>
 				<td>1</td>
 				<td style="background-color:lightgrey;">
